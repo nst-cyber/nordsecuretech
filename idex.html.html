@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NORDSECURETECH | Vidéosurveillance</title>
+  <meta name="description" content="NORDSECURETECH : caméras IP et analogiques Hikvision, caméras WiFi EZVIZ, DVR, NVR et disques durs.">
+  <style>
+    :root {
+      --bleu: #0b2545;
+      --bleu2: #13315c;
+      --orange: #f28c28;
+      --clair: #f3f6fa;
+      --texte: #1d2733;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: Arial, Helvetica, sans-serif; color: var(--texte); background: var(--clair); line-height: 1.6; }
+    a { text-decoration: none; }
+
+    /* Menu */
+    header.top { background: var(--bleu); position: sticky; top: 0; z-index: 10; }
+    .bar { max-width: 1100px; margin: auto; padding: 14px 20px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; }
+    .logo { color: #fff; font-weight: bold; font-size: 1.3rem; letter-spacing: 1px; }
+    .logo span { color: var(--orange); }
+    nav { display: flex; flex-wrap: wrap; gap: 18px; }
+    nav a { color: #fff; font-size: .95rem; }
+    nav a:hover { color: var(--orange); }
+
+    /* Accueil */
+    .hero { background: linear-gradient(135deg, var(--bleu), var(--bleu2)); color: #fff; text-align: center; padding: 70px 20px; }
+    .hero h1 { font-size: 2.2rem; margin-bottom: 12px; }
+    .hero p { max-width: 640px; margin: 0 auto 26px; opacity: .92; }
+    .btn { display: inline-block; background: var(--orange); color: #fff; padding: 12px 26px; border-radius: 8px; font-weight: bold; border: none; cursor: pointer; font-size: 1rem; }
+    .btn:hover { background: #d97a1b; }
+
+    /* Sections */
+    section { max-width: 1100px; margin: auto; padding: 50px 20px; }
+    section h2 { color: var(--bleu); font-size: 1.7rem; margin-bottom: 8px; text-align: center; }
+    .sous { text-align: center; color: #5b6673; margin-bottom: 30px; }
+    .grille { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+    .carte { background: #fff; border-radius: 12px; padding: 24px; box-shadow: 0 2px 10px rgba(0,0,0,.07); border-top: 4px solid var(--orange); display: flex; flex-direction: column; }
+    .carte .icone { font-size: 2.2rem; margin-bottom: 8px; }
+    .carte .photo { width: 100%; height: 190px; object-fit: contain; background: #fff; border-radius: 8px; margin-bottom: 12px; }
+    .carte h3 { color: var(--bleu); margin-bottom: 6px; }
+    .carte p { font-size: .95rem; flex: 1; }
+    .tags { margin: 12px 0; display: flex; flex-wrap: wrap; gap: 6px; }
+    .tags span { background: var(--clair); border: 1px solid #d5dde7; border-radius: 20px; padding: 2px 10px; font-size: .8rem; color: var(--bleu2); }
+    .carte .btn { text-align: center; padding: 9px 16px; font-size: .9rem; margin-top: 8px; }
+
+    /* Pourquoi nous */
+    .fond { background: #fff; }
+    .points { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+    .points li { background: var(--clair); border-radius: 10px; padding: 18px; }
+    .points strong { color: var(--bleu); display: block; margin-bottom: 4px; }
+
+    /* Contact */
+    form { max-width: 520px; margin: 0 auto; display: grid; gap: 12px; }
+    input, select, textarea { width: 100%; padding: 12px; border: 1px solid #c5cfdb; border-radius: 8px; font-size: 1rem; font-family: inherit; }
+    textarea { min-height: 100px; resize: vertical; }
+
+    footer { background: var(--bleu); color: #cfd8e3; text-align: center; padding: 26px 20px; font-size: .9rem; }
+
+    /* Bouton WhatsApp flottant */
+    .wa { position: fixed; right: 18px; bottom: 18px; background: #25d366; color: #fff; padding: 14px 18px; border-radius: 40px; font-weight: bold; box-shadow: 0 4px 14px rgba(0,0,0,.25); z-index: 20; }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 1.6rem; }
+      nav { gap: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="top">
+    <div class="bar">
+      <div class="logo">NORD<span>SECURE</span>TECH</div>
+      <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#cameras">Caméras</a>
+        <a href="#enregistreurs">Enregistreurs</a>
+        <a href="#stockage">Stockage</a>
+        <a href="#pourquoi">Pourquoi nous</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero" id="accueil">
+    <h1>Protégez ce qui compte pour vous</h1>
+    <p>Caméras de vidéosurveillance Hikvision et EZVIZ, enregistreurs et stockage. Demandez votre devis, nous vous conseillons selon votre besoin.</p>
+    <a class="btn" href="#contact">Demander un devis</a>
+  </div>
+
+  <section id="cameras">
+    <h2>Caméras</h2>
+    <p class="sous">Choisissez la qualité d'image adaptée à votre site.</p>
+    <div class="grille">
+      <div class="carte">
+        <img class="photo" data-photo="camera-ip" alt="Caméra IP Hikvision">
+        <h3>Caméras IP Hikvision</h3>
+        <p>Image numérique de haute qualité, installation en réseau.</p>
+        <div class="tags"><span>2 MP</span><span>4 MP</span><span>6 MP</span><span>8 MP</span></div>
+        <a class="btn" href="#contact" data-produit="Caméra IP Hikvision">Demander le prix</a>
+      </div>
+      <div class="carte">
+        <img class="photo" data-photo="camera-analogique" alt="Caméra analogique Hikvision">
+        <h3>Caméras analogiques Hikvision</h3>
+        <p>Solution économique, idéale pour équiper une maison ou une boutique.</p>
+        <div class="tags"><span>2 MP</span><span>4 MP</span><span>6 MP</span><span>8 MP</span></div>
+        <a class="btn" href="#contact" data-produit="Caméra analogique Hikvision">Demander le prix</a>
+      </div>
+      <div class="carte">
+        <img class="photo" data-photo="camera-wifi" alt="Caméra WiFi EZVIZ">
+        <h3>Caméras WiFi EZVIZ</h3>
+        <p>Faciles à installer, avec suivi depuis votre téléphone.</p>
+        <div class="tags"><span>WiFi</span><span>Application mobile</span></div>
+        <a class="btn" href="#contact" data-produit="Caméra WiFi EZVIZ">Demander le prix</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="fond">
+    <section id="enregistreurs">
+      <h2>Enregistreurs</h2>
+      <p class="sous">Le cœur de votre système : ils enregistrent et centralisent vos caméras.</p>
+      <div class="grille">
+        <div class="carte">
+          <img class="photo" data-photo="dvr" alt="DVR Hikvision">
+          <h3>DVR</h3>
+          <p>Pour les caméras analogiques.</p>
+          <div class="tags"><span>4 canaux</span><span>8 canaux</span><span>16 canaux</span><span>32 canaux</span></div>
+          <a class="btn" href="#contact" data-produit="DVR">Demander le prix</a>
+        </div>
+        <div class="carte">
+          <img class="photo" data-photo="nvr-poe" alt="NVR PoE Hikvision">
+          <h3>NVR PoE</h3>
+          <p>Alimente les caméras IP par le câble réseau : un seul câble par caméra.</p>
+          <div class="tags"><span>4 canaux</span><span>8 canaux</span><span>16 canaux</span><span>32 canaux</span></div>
+          <a class="btn" href="#contact" data-produit="NVR PoE">Demander le prix</a>
+        </div>
+        <div class="carte">
+          <img class="photo" data-photo="nvr-non-poe" alt="NVR non PoE Hikvision">
+          <h3>NVR non PoE</h3>
+          <p>Pour les caméras IP alimentées séparément.</p>
+          <div class="tags"><span>Caméras IP</span></div>
+          <a class="btn" href="#contact" data-produit="NVR non PoE">Demander le prix</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section id="stockage">
+    <h2>Stockage</h2>
+    <p class="sous">Gardez vos enregistrements en sécurité.</p>
+    <div class="grille">
+      <div class="carte">
+        <img class="photo" data-photo="disque-dur" alt="Disque dur">
+        <h3>Disques durs</h3>
+        <p>Disques adaptés à la vidéosurveillance, pour conserver vos vidéos plus longtemps.</p>
+        <a class="btn" href="#contact" data-produit="Disque dur">Demander le prix</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="fond">
+    <section id="pourquoi">
+      <h2>Pourquoi choisir NORDSECURETECH ?</h2>
+      <p class="sous">Du conseil au matériel, pour un système adapté à vos besoins.</p>
+      <ul class="points">
+        <li><strong>Conseil personnalisé</strong>Nous vous aidons à choisir le bon nombre de caméras et la bonne qualité.</li>
+        <li><strong>Marques reconnues</strong>Des produits Hikvision et EZVIZ.</li>
+        <li><strong>Devis rapide</strong>Contactez-nous sur WhatsApp, la réponse est directe.</li>
+        <li><strong>Matériel complet</strong>Caméras, enregistreurs et disques durs au même endroit.</li>
+      </ul>
+    </section>
+  </div>
+
+  <section id="contact">
+    <h2>Demander un devis</h2>
+    <p class="sous">Remplissez le formulaire : votre message s'ouvre dans WhatsApp, prêt à être envoyé.</p>
+    <form id="formulaire">
+      <input type="text" id="nom" placeholder="Votre nom" required>
+      <select id="produit">
+        <option>Caméra IP Hikvision</option>
+        <option>Caméra analogique Hikvision</option>
+        <option>Caméra WiFi EZVIZ</option>
+        <option>DVR</option>
+        <option>NVR PoE</option>
+        <option>NVR non PoE</option>
+        <option>Disque dur</option>
+        <option>Kit complet / Autre</option>
+      </select>
+      <textarea id="message" placeholder="Votre besoin (nombre de caméras, maison ou boutique...)"></textarea>
+      <button type="submit" class="btn">Envoyer sur WhatsApp</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2026 NORDSECURETECH, vidéosurveillance et sécurité</p>
+  </footer>
+
+  <a class="wa" id="wa" href="#" target="_blank" rel="noopener">💬 WhatsApp</a>
+
+  <script>
+    // Cherche automatiquement l'extension de chaque photo
+    var EXTENSIONS = [".jpg", ".jpeg", ".png", ".webp", ".jfif"];
+    document.querySelectorAll("img[data-photo]").forEach(function (img) {
+      var base = img.getAttribute("data-photo");
+      var i = 0;
+      img.onerror = function () {
+        i++;
+        if (i < EXTENSIONS.length) { img.src = base + EXTENSIONS[i]; }
+        else { img.style.display = "none"; }
+      };
+      img.src = base + EXTENSIONS[0];
+    });
+
+    // MODIFIE ICI : ton numéro WhatsApp (indicatif + numéro, sans + ni espaces)
+    // Exemple pour le Burkina Faso : "226" suivi de ton numéro à 8 chiffres
+    var NUMERO = "22677403999";
+
+    function lienWhatsApp(texte) {
+      return "https://wa.me/" + NUMERO + "?text=" + encodeURIComponent(texte);
+    }
+
+    // Bouton flottant
+    document.getElementById("wa").href = lienWhatsApp("Bonjour NORDSECURETECH, je souhaite des informations.");
+
+    // Les boutons "Demander le prix" préchoisissent le produit dans le formulaire
+    document.querySelectorAll("[data-produit]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        document.getElementById("produit").value = b.getAttribute("data-produit");
+      });
+    });
+
+    // Formulaire : ouvre WhatsApp avec le message
+    document.getElementById("formulaire").addEventListener("submit", function (e) {
+      e.preventDefault();
+      var nom = document.getElementById("nom").value;
+      var produit = document.getElementById("produit").value;
+      var msg = document.getElementById("message").value;
+      var texte = "Bonjour NORDSECURETECH, je suis " + nom + ". Produit : " + produit + ". " + msg;
+      window.open(lienWhatsApp(texte), "_blank");
+    });
+  </script>
+
+</body>
+</html>
